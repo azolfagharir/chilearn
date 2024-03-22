@@ -55,22 +55,15 @@ function App() {
             <div className="flex justify-between inset-0 top-0 items-center ">
               <BrowserRouter>
                 <Routes>
-                  <Route
-                    path="/login"
-                    element={
-                      <button className="bg-myFavorite my_button mx-8 text-white xl:absolute xl:mx-96">
-                        ثبت نام
-                      </button>
-                    }
-                  />
-                  <Route
-                    path="/signup"
-                    element={
-                      <button className=" mb-8 xl:absolute xl:mx-96">
-                        ورود
-                      </button>
-                    }
-                  />
+                <Route
+                path="/SignUp"
+                element={<SignUp />}   
+              />
+              <Route
+                path="/Login"
+                element={<Login />} 
+              />
+
                 </Routes>
               </BrowserRouter>
             </div>
