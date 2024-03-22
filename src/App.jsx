@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home";
-import Logo from "./Logo";
 import Guide from "./Guide";
 import About from "./About";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Header from "./Header";
+
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
         <br />
         <br />
 
-        <div class="flex flex-col justify-center items-center min-h-screen ">
+        <div className="flex flex-col justify-center items-center min-h-screen ">
           <div className="flex justify-center items-center h-full	">
             <img
               className="rounded-full items-center"
@@ -34,7 +35,6 @@ function App() {
               صحبت کردن آسان شد!
             </h1>
           </div>
-
           <br />
           <br />
           <br />
@@ -53,30 +53,22 @@ function App() {
 
           <div className="absolute inset-0 flex top-0 items-center justify-center  ">
             <div className="flex justify-between inset-0 top-0 items-center ">
-              <BrowserRouter>
+              {/* <BrowserRouter>
                 <Routes>
-                <Route
-                path="/SignUp"
-                element={<SignUp />}   
-              />
-              <Route
-                path="/Login"
-                element={<Login />} 
-              />
 
                 </Routes>
-              </BrowserRouter>
+  </BrowserRouter>*/}
             </div>
           </div>
           <br />
           <br />
           <br />
 
-          <div class="min-h-screen top-80 absolute flex flex-col justify-center items-center">
-            <h1 class="text-myFavorite text-center md:text-center">
+          <div className="min-h-screen top-80 absolute flex flex-col justify-center items-center">
+            <h1 className="text-myFavorite text-center md:text-center">
               رایگان، باحال
             </h1>
-            <h1 class="text-myFavorite text-center md:text-center">
+            <h1 className="text-myFavorite text-center md:text-center">
               تاثیر گذار
             </h1>
           </div>
@@ -136,16 +128,16 @@ function App() {
             </div>
             <footer className="bg-myFavorite flex flex-col items-center text-center text-surface dark:bg-neutral-700 dark:text-white w-full">
               {" "}
-              <div class="container px-6 pt-6">
-                <div class="mb-6 flex justify-center space-x-2">
+              <div className="container px-6 pt-6">
+                <div className="mb-6 flex justify-center space-x-2">
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="[&>svg]:h-5 [&>svg]:w-5">
+                    <span className="[&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -159,11 +151,11 @@ function App() {
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                    <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -177,11 +169,11 @@ function App() {
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                    <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -195,11 +187,11 @@ function App() {
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                    <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -213,11 +205,11 @@ function App() {
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                    <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -231,11 +223,11 @@ function App() {
                   <a
                     href="#!"
                     type="button"
-                    class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+                    className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
                   >
-                    <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                    <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -251,12 +243,13 @@ function App() {
           </div>
           <div className="container mx-auto flex justify-between items-center top-0 absolute w-full">
             <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/logo" element={<Logo />} />
-                <Route path="/guide" element={<Guide />} />
-                <Route path="/about" element={<About />} />
-              </Routes>
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/SignUp" component={SignUp} />
+                <Route path="/Login" component={Login} />
+                <Route path="/guide" component={Guide} />
+                <Route path="/about" component={About} />
+              </Switch>
             </BrowserRouter>
           </div>
         </div>
