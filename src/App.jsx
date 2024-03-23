@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./Home";
-import Guide from "./Guide";
-import About from "./About";
-import Login from "./Login";
-import SignUp from "./SignUp";
-import Header from "./Header";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./component/Home";
+import Guide from "./component/Guide";
+import About from "./component/About";
+import Login from "./component/Login";
+import SignUp from "./component/SignUp";
+import Header from "./component/Header";
 
 function App() {
   return (
     <>
-      <div className="grid container ">
+      <div className="grid container  ">
         <img
           className="w-12 h-12 top-0 absolute ml-4 mt-4"
           src="/my_logo.png"
@@ -242,15 +242,89 @@ function App() {
             </footer>
           </div>
           <div className="container mx-auto flex justify-between items-center top-0 absolute w-full">
-            <BrowserRouter>
+            <Router>
+              <header>
+                <nav>
+                  <ul>
+                    <div className="container flex flex-row justify-between items-center  absolute mr-4 top-4 ">
+                      <li>
+                        <Link
+                          className="text-black text-center inline"
+                          to={"/component/"}
+                        >
+                          خانه
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="text-black inline"
+                          to={"/component/guide"}
+                        >
+                          راهنما
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="text-black inline "
+                          to={"/component/about"}
+                        >
+                          درباره ما
+                        </Link>
+                      </li>
+                    </div>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <li className="flex justify-center items-center h-full">
+                      <Link
+                        className="bg-myFavorite my_button md:mx-40 end-0 mx-28 items-center text-white top-490 absolute w-96 text-center xl:absolute xl:mx-96"
+                        to={"/component/SignUp"}
+                      >
+                        ثبت نام
+                      </Link>
+                    </li>
+                    <br />
+                    <br />
+                    <li className="flex justify-center items-center h-full ">
+                      <Link
+                        className="bg-myFavorite md:mx-40 my_button end-0 mx-28 items-center text-white top-500 absolute w-96 text-center xl:absolute xl:mx-96"
+                        to={"/component/Login"}
+                      >
+                        ورود
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
               <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/SignUp" component={SignUp} />
-                <Route path="/Login" component={Login} />
-                <Route path="/guide" component={Guide} />
-                <Route path="/about" component={About} />
+                <Route path="/component/SignUp" component={SignUp} />
+                <Route path="/component/Login" component={Login} />
+                <Route path="/component/guide" component={Guide} />
+                <Route path="/component/about" component={About} />
               </Switch>
-            </BrowserRouter>
+            </Router>
           </div>
         </div>
       </div>
