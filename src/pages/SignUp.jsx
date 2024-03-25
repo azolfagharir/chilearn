@@ -1,7 +1,7 @@
 import Header from "../component/Header";
 import React from "react";
 import Questions from "./questions";
-
+import PathConstants from "../routes/pathConstants";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
@@ -322,7 +322,7 @@ function SignUp() {
                     اکانت دارم{" "}
                     <Link
                       className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                      to="/component/Login"
+                      to={PathConstants.Login}
                     >
                       (ورود)
                     </Link>

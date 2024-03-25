@@ -1,14 +1,12 @@
 import Header from "../component/Header";
+import PathConstants from "../routes/pathConstants";
 import React from "react";
 import { Link } from "react-router-dom";
 function Login() {
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <div>
-        <section className="bg-gray-50 dark:bg-gray-900 text-center mx-28 top-10 md:mx-72 xl:mx-96 ">
+      <div className="">
+        <section className="bg-gray-50 dark:bg-gray-900 text-center w-96 mx-32 top-0 md:mx-48  lg:mx-72 xl:right-96 xl:justify-center">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a
               href="#"
@@ -91,7 +89,7 @@ function Login() {
                     ساخت اکانت{" "}
                     <Link
                       className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                      to="/component/SignUp"
+                      to={PathConstants.SignUp}
                     >
                       ساین آپ
                     </Link>
