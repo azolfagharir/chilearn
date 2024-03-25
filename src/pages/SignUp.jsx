@@ -1,7 +1,8 @@
-import Header from "./Header";
+import Header from "../component/Header";
 import React from "react";
 import Questions from "./questions";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 
@@ -156,12 +157,63 @@ function SignUp() {
   ];
   return (
     <>
-      <Header />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <br />
       <div>
-        <section className="bg-gray-50 dark:bg-gray-900 text-center mx-28 top-40 md:mx-72 xl:mx-96 ">
+        <section className="bg-gray-50 dark:bg-gray-900 text-center top-28 absolute mx-28  md:top-28 md:absolute xl: ">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a
               href="#"
@@ -281,6 +333,15 @@ function SignUp() {
           </div>
         </section>
       </div>
+      <br />
+      <br />
+      <p></p>
+      <br />
+      <p></p>
+      <br />
+      <p></p>
+      <br />
+      <p></p>
     </>
   );
 }

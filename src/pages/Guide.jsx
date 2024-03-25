@@ -1,9 +1,8 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../component/Header";
 function Guide() {
   return (
     <>
-      <Header />
       <div>
         <h1>درباره ما</h1>
         <p>خوش آمدید به صفحه درباره ما!</p>

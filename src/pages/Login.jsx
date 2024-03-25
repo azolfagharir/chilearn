@@ -1,10 +1,9 @@
-import Header from "./Header";
+import Header from "../component/Header";
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <>
-      <Header />
       <br />
       <br />
       <br />
