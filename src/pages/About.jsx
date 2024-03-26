@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto   bg-white shadow-xl rounded-lg text-gray-900  top-0">
+      <div className="w-72 ml-4 bg-white shadow-xl rounded-lg text-gray-900  top-0">
         <div className="rounded-t-lg h-32 overflow-hidden">
           <img
             className="object-cover object-top w-full"
@@ -34,7 +34,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+      <div className=" w-72 mr-4 bg-white shadow-xl rounded-lg text-gray-900 top-16 absolute end-0">
         <div className="rounded-t-lg h-32 overflow-hidden">
           <img
             className="object-cover object-top w-full"

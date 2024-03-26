@@ -7,19 +7,18 @@ const Home = () => {
     <>
       <div className="grid container  ">
         <div className="flex flex-col justify-center items-center min-h-screen ">
-          <div className="absolute top-20 flex justify-center items-center">
+          <div className="absolute top-24 flex justify-center items-center">
             <img
               className="w-80 h-80 rounded-full"
               src="/my_increased.png"
               alt=""
             />
           </div>
-          <br />
-          <br />
-          <div className="absolute top-96 inset-0 flex flex-col justify-center items-center text-center md:mx-50 xl:mx-96">
+          <div className="absolute mt-4 top-96  inset-0 flex flex-col justify-center items-center text-center md:mx-50 xl:mx-96">
             <h1 className="text-4xl" dir="rtl">
               صحبت کردن آسان شد!
             </h1>
+            <br />
             <p>اولین پلتفرم آموزش فارسی به کودکان زیر 5 سال</p>
           </div>
           <br />
@@ -30,12 +29,20 @@ const Home = () => {
           <br />
           <br />
           <br />
+          <br /> <br />
           <br />
-          <div className="top-96 absolute min-h-screen flex flex-col justify-center items-center">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="top-96   absolute min-h-screen flex flex-col justify-center items-center">
             <h1 className="text-myFavorite text-center">رایگان، باحال</h1>
             <h1 className="text-myFavorite text-center">تاثیر گذار</h1>
 
-            <ul className="mt-8">
+            <ul className="mt-8 2xl:mb-8">
               <li className="mb-4">
                 <Link
                   className="bg-myFavorite my_button text-white text-center block w-96 py-2"
@@ -54,7 +61,26 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <p className="text-myParagraph mx-8 text-center xl:mx-96 md:items-center md:mr-4 md:end-0 ">
+          <br className="hidden md:inline-block" />
+          <br className="hidden md:inline-block" />
+          <br className="hidden md:inline-block" />
+          <br className="hidden 2xl:inline-block" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <p className="text-myParagraph top-96 mx-8 text-center xl:mx-96 md:items-center md:mr-4 md:end-0 ">
             {" "}
             سایت چیلرن با ارائه ی محتوای جذاب و سرگرم کننده، به کودکان 2 تا 5
             سال کمک می کند تا{" "}

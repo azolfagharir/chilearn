@@ -5,21 +5,30 @@ import PathConstants from "../routes/pathConstants";
 export default function Header() {
   return (
     <>
-      <header className="z-20">
-        <nav>
-          <ul className="flex justify-around mt-4 ml-12 md:ml-16 lg:ml-32 xl:ml-48">
-            <li className=" mx-8">
-              <Link className="text-black inline" to={PathConstants.Home}>
-                <img className="w-12 h-12" src="/my_logo.png" alt="" />
+      <header className="z-20 bg-white p-4 fixed top-0 left-0 w-full">
+        <nav className="container mx-auto">
+          <ul className="flex items-center justify-between">
+            <li className="mr-4">
+              <Link
+                className="text-black inline-flex items-center"
+                to={PathConstants.Home}
+              >
+                <img className="w-12 h-12" src="/my_logo.png" alt="Logo" />
               </Link>
             </li>
-            <li className="mx-8">
-              <Link className="text-black inline" to={PathConstants.Guide}>
+            <li className="mx-auto">
+              <Link
+                className="text-black inline-flex items-center"
+                to={PathConstants.Guide}
+              >
                 راهنما
               </Link>
             </li>
-            <li className="mx-8">
-              <Link className="text-black inline" to={PathConstants.About}>
+            <li className="ml-4">
+              <Link
+                className="text-black inline-flex items-center"
+                to={PathConstants.About}
+              >
                 درباره ما
               </Link>
             </li>

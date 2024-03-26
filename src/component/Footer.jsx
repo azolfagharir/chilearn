@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="absolute md:top-1096">
+      <div className="absolute bottom-auto w-full">
         <footer className="bg-myFavorite flex flex-col items-center text-center text-surface dark:bg-neutral-700 dark:text-white w-full bottom-0 ">
           {" "}
           <div className="container px-6 pt-6">
