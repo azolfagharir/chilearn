@@ -1,8 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { ReactFloatingBalloons } from "react-floating-balloons";
+import { useState, useEffect } from "react";
 import Header from "../component/Header";
 import GameScreen from "../component/GameScreen";
-
 const TheTutorial = [
   {
     Title: "سلام",
@@ -14,9 +14,11 @@ const TheTutorial = [
 ];
 
 function TutorialYoung() {
+  const [showBalloons, setShowBalloons] = useState(false);
   const [isSoundPlaying, setIsSoundPlaying] = useState(false);
   const toggleSound = () => {
     setIsSoundPlaying(!isSoundPlaying);
+    setShowBalloons(!showBalloons);
   };
 
   return (
@@ -51,6 +53,16 @@ function TutorialYoung() {
             <source src="/salam.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
+        )}
+      </div>
+      <div className="flex justify-center items-center h-screen">
+        {showBalloons && (
+          <ReactFloatingBalloons
+            count={8}
+            msgText={TheTutorial[0].Title}
+            colors={["yellow", "purple"]}
+            popVolumeLevel={0.8}
+          />
         )}
       </div>
     </div>
