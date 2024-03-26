@@ -18,17 +18,18 @@ function TutorialYoung() {
   const toggleSound = () => {
     setIsSoundPlaying(!isSoundPlaying);
   };
+
   return (
-    <div className="container mx-auto py-8 xl:mx-8 2xl:mx-24">
-      <br className="hidden md:block" />
-      <br className="hidden md:block" />
-      <br className="hidden md:block" />
+    <div className="container mx-auto py-8 xl:mx-1 2xl:mx-16">
       <br />
       <br />
       <h1 className="text-3xl font-bold mb-4 text-center">
         {TheTutorial[0].Title}
       </h1>
-      <div className="relative w-full h-96">
+
+      <br />
+      <br />
+      <div className="relative w-full h-auto aspect-widescreen">
         <video className="w-full h-full object-cover" controls>
           <source src={TheTutorial[0].VideoAdress} type="video/mp4" />
           Your browser does not support the video tag.
@@ -55,4 +56,5 @@ function TutorialYoung() {
     </div>
   );
 }
+
 export default TutorialYoung;
